@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+/*const mysql = require('mysql');
 
 const connection = mysql.createConnection({
     host: 'localhost',      // Dirección del servidor MySQL
@@ -15,4 +15,5 @@ const connection = mysql.createConnection({
     console.log('Conexión exitosa a la base de datos MySQL');
   });
 
-  connection.end();
+  connection.end(); */
+  export const PORT = 4000;

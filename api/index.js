@@ -17,4 +17,16 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
+
+import express from "express"
+import {PORT} from "./config.js"
+
+import index from "./src/routes/index.js"
+
+const app = express()
+app.use(index);
+
+app.listen(PORT);
+
+
+console.log(`app running on port ${PORT}`)
